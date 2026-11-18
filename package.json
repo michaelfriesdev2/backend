@@ -1,0 +1,13 @@
+{
+  "name": "mfvpn-socks5-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Authenticated SOCKS5 backend for MFVPN",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

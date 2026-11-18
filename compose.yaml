@@ -1,0 +1,11 @@
+services:
+  mfvpn-socks5:
+    build: .
+    container_name: mfvpn-socks5
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${MFVPN_PORT:-1080}:1080/tcp"
+    environment:
+      MFVPN_HOST: 0.0.0.0
+      MFVPN_PORT: 1080
